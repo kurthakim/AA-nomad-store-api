@@ -24,6 +24,7 @@ source "amazon-ebs" "nomad" {
   source_ami_filter {
     filters = {
       // name = "ubuntu-bionic-18.04-amd64-minimal-*" #error change it to another one
+      // REPUSH
       name = "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*" 
       root-device-type = "ebs"
       virtualization-type = "hvm"
