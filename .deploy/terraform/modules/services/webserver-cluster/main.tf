@@ -245,7 +245,7 @@ resource "aws_autoscaling_group" "nomad_asg" {
     propagate_at_launch = true
   }
 
-  instance refresh {
+  instance_refresh {
     strategy = "Rolling"
     preferences {
       min_healthy_percentage = 50
@@ -268,7 +268,7 @@ resource "aws_lb_listener" "https" {
   default_action {
     type = "fixed-response"
 
-    fixed-response {
+    fixed_response {
       content_type = "text/plain"
       message_body = "404: Page not found"
       status_code = 404
