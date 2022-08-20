@@ -63,7 +63,7 @@ variable "log_profile_name" {
   description = "The logs profile for aws instance"
 }
 
-variable "dbs_hosted_zone" {
+variable "dns_hosted_zone" {
   description = "The name of our dns hosted zone"
   default = "cagaros.com"
 }

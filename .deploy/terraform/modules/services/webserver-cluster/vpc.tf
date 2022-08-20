@@ -10,7 +10,7 @@ resource "aws_internet_gateway" "igw" {
 }
 
 #AZ data source
-data "aws_availibility_zones" "available" {
+data "aws_availability_zones" "available" {
   state = "available"
 }
 
