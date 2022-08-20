@@ -4,5 +4,5 @@ output "alb_dns_name" {
 }
 
 output "lb_url" {
-  value = "SSL url for load balancer https://${aws_route53.record.domain.fqdn}"
+  value = "SSL url for load balancer https://${aws_route53_record.domain.fqdn}"
 }

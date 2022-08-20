@@ -18,7 +18,7 @@ data "aws_availability_zones" "available" {
 resource "aws_subnet" "subnet_1_public" {
   vpc_id = aws_vpc.vpc.id
   cidr_block = var.cidr_public_subnet_1
-  availability_zone = data.aws_availibility_zones.available.names[0]
+  availability_zone = data.aws_availability_zones.available.names[0]
 
   tags = {
     Tier = "Public"
@@ -29,7 +29,7 @@ resource "aws_subnet" "subnet_1_public" {
 resource "aws_subnet" "subnet_2_public" {
   vpc_id = aws_vpc.vpc.id
   cidr_block = var.cidr_public_subnet_2
-  availability_zone = data.aws_availibility_zones.available.names[1]
+  availability_zone = data.aws_availability_zones.available.names[1]
 
   tags = {
     Tier = "Public"
@@ -39,7 +39,7 @@ resource "aws_subnet" "subnet_2_public" {
 resource "aws_subnet" "subnet_3_public" {
   vpc_id = aws_vpc.vpc.id
   cidr_block = var.cidr_public_subnet_3
-  availability_zone = data.aws_availibility_zones.available.names[2]
+  availability_zone = data.aws_availability_zones.available.names[2]
 
   tags = {
     Tier = "Public"
