@@ -4,6 +4,7 @@ data "aws_route53_zone" "public" {
   private_zone = false
 }
 
+
 resource "aws_acm_certificate" "myapp" {
   domain_name = aws_route53_record.domain.fqdn
   validation_method = "DNS"
